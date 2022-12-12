@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.html" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://opensource.glassanimals.com/">
+          <img src="assets/GA logo.png" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" class="nav-link" href="./index.html"> Home </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> More </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" class="nav-link" href="./about.html">
+                About
+              </a>
+              <a class="navbar-item" class="nav-link" href="./music-video.html">
+                Music Videos
+              </a>
+              <a class="navbar-item" class="nav-link" href="./discography">
+                Discography
+              </a>
+              <a class="navbar-item" class="nav-link" href="./tour.html">
+                Tour
+              </a>
+              <hr class="navbar-divider" />
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="column">
+      <div class="columnone">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-48x48"></figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img
+                    src="https://bulma.io/images/placeholders/96x96.png"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Our History</p>
+                <p class="subtitle is-6">@glassanimals</p>
+              </div>
+            </div>
+
+            <p>
+              Glass Animals are an English indie rock band formed in Oxford in
+              2010. Founded and led by singer, songwriter, and producer Dave
+              Bayley, the group also features his <br />
+              childhood friends Joe Seaward, Ed Irwin-Singer and Drew
+              MacFarlane. Bayley wrote and produced all three Glass Animals
+              albums. Bayley spent his childhood in <br />Massachusetts and
+              Texas[3] before relocating to Oxford, where he met the other band
+              members at school.[4] Their first album, Zaba (2014), spawned the
+              single <br />“Gooey”, which was eventually certified platinum in
+              the United States. Their second full album, How to Be a Human
+              Being, received positive reviews and won in <br />two categories
+              at the 2018 MPG Awards for UK Album of the Year and Self Producing
+              Artist of the Year, as well as a spot on the Mercury Prize
+              shortlist. The third,
+              <br />
+              Dreamland, peaked at number two on the UK Albums Chart and number
+              seven on the US Billboard 200.
+            </p>
+            <br />
+            <br />
+
+            <br />
+            <br />
+            <time datetime="2016-1-1">6:15 PM - 5 Jan 2016</time>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="columntwo">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-48x48"></figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img
+                    src="https://bulma.io/images/placeholders/96x96.png"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Instagram</p>
+                <p class="subtitle is-6">@glassanimals</p>
+              </div>
+            </div>
+
+            <a href="https://www.instagram.com/glassanimals/?hl=en"
+              >Glass Animals</a
+            >
+            <a href="https://www.instagram.com/feelinlokki/?hl=en"
+              >Drew Macfarlane</a
+            >
+
+            <a href="https://www.instagram.com/joeseaward/?hl=en"
+              >Joe Seaward</a
+            >
+            <br />
+            <br />
+
+            <br />
+            <br />
+            <time datetime="2016-1-1">1:59 PM - 15 Jan 2016</time>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
